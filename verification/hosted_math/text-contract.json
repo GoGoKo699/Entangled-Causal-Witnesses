@@ -28,8 +28,8 @@
     {
       "path": "science/witness.md",
       "index": 26,
-      "source_sha256": "ffd3b26356b6fe9adae1b8a58ac1af4da54354d6217196eec856f38e31ab0592",
-      "expected_text": "\n  \n    m\n    U\n  \n  =\n  \n    1\n    2\n  \n  Tr\n  \n    \n  \n  \n    [\n    \n      ρ\n      \n        A\n        B\n      \n    \n    {\n    \n      I\n      A\n    \n    ⊗\n    U\n    ,\n    \n      F\n      1\n    \n    }\n    ]\n  \n  ,\n  \n    \n  \n  w\n  =\n  \n    1\n    2\n  \n  (\n  \n    p\n    1\n  \n  −\n  \n    m\n    U\n  \n  )\n  .\n"
+      "source_sha256": "ef4dea0baff4a85942179c65cf3c4c71b651913efdd2e47596c3753c55fa61b6",
+      "expected_text": "\n  \n    m\n    U\n  \n  =\n  \n    1\n    2\n  \n  \n    Tr\n  \n  \n    \n  \n  \n    [\n    \n      ρ\n      \n        A\n        B\n      \n    \n    {\n    \n      I\n      A\n    \n    ⊗\n    U\n    ,\n    \n      F\n      1\n    \n    }\n    ]\n  \n  ,\n  \n    \n  \n  w\n  =\n  \n    1\n    2\n  \n  (\n  \n    p\n    1\n  \n  −\n  \n    m\n    U\n  \n  )\n  .\n"
     },
     {
       "path": "learning/WORKED_EXAMPLE.md",
@@ -40,8 +40,8 @@
     {
       "path": "learning/WORKED_EXAMPLE.md",
       "index": 47,
-      "source_sha256": "70345cfab9eb2e558d7293e159e4db30acdc84f5e9c4767550c6c26373de2b6f",
-      "expected_text": "\n  w\n  =\n  Tr\n  (\n  W\n  \n    R\n    \n      B\n      C\n    \n  \n  )\n  =\n  \n    1\n    2\n  \n  (\n  \n    p\n    1\n  \n  −\n  \n    m\n    U\n  \n  )\n  =\n  \n    \n      5\n      −\n      \n        41\n      \n    \n    20\n  \n  ≈\n  −\n  0.0701562119\n  .\n"
+      "source_sha256": "d028719f48433bad576cb2d7a0980af75efb1e733c708022df89173322ead9f8",
+      "expected_text": "\n  w\n  =\n  \n    Tr\n  \n  (\n  W\n  \n    R\n    \n      B\n      C\n    \n  \n  )\n  =\n  \n    1\n    2\n  \n  (\n  \n    p\n    1\n  \n  −\n  \n    m\n    U\n  \n  )\n  =\n  \n    \n      5\n      −\n      \n        41\n      \n    \n    20\n  \n  ≈\n  −\n  0.0701562119\n  .\n"
     },
     {
       "path": "learning/WORKED_EXAMPLE.md",

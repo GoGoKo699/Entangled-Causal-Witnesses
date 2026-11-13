@@ -101,7 +101,7 @@ W=\frac{I-U}{2}\otimes|1\rangle\langle1|.
 It is a positive operator on the formal two-event tensor product. The measured temporal functional is
 
 ```math
-w=\operatorname{Tr}(WR_{BC})
+w=\mathrm{Tr}(WR_{BC})
 =\frac12(p_1-m_U)
 =\frac{5-\sqrt{41}}{20}
 \approx-0.0701562119.
@@ -112,7 +112,7 @@ This is a difference between statistics from **two contexts**, not the probabili
 Here the negative PDM eigenvalues all lie in the $`U=-1,C=1`$ block selected by $`W`$. With the repository's convention,
 
 ```math
-f(R)=\|R\|_1-1=-2w
+f(R)=\Vert R\Vert_1-1=-2w
 =\frac{\sqrt{41}-5}{10}
 \approx0.1403124237.
 ```

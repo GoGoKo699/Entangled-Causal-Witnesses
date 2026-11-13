@@ -4,14 +4,14 @@
 
 Large Schmidt number need not imply large entanglement entropy. This page gives a separate lower bound on the entanglement of formation of every input that produces a fixed positive PDM negativity. The proof uses standard relative-entropy entanglement and Bell-overlap ingredients, after deriving a channel-specific bound on how much negativity a given overlap can produce.
 
-Throughout, logarithms in entanglement measures have base two, and $`f=\|R\|_1-1`$ has the normalization of the [model](model.md).
+Throughout, logarithms in entanglement measures have base two, and $`f=\Vert R\Vert_1-1`$ has the normalization of the [model](model.md).
 
 ## 1. A bound in terms of Bell overlap
 
 For any initial state define
 
 ```math
-F=\operatorname{Tr}(E_d\rho_{AB})\in[0,1],
+F=\mathrm{Tr}(E_d\rho_{AB})\in[0,1],
 \qquad s=1-2q.
 ```
 
@@ -93,7 +93,7 @@ To see it, output-bit flips are a classical postprocessing of the noiseless PDM 
 Let $`E_F(\rho)`$ denote the usual entanglement of formation: the minimum average pure-state entanglement entropy over decompositions of $`\rho`$. Let
 
 ```math
-E_R(\rho)=\inf_{\sigma\in\mathrm{SEP}}D_2(\rho\|\sigma)
+E_R(\rho)=\inf_{\sigma\in\mathrm{SEP}}D_2(\rho\Vert\sigma)
 ```
 
 be relative-entropy entanglement, with logarithms of base two. The standard inequality $`E_F\geq E_R`$ and quantum relative-entropy data processing are inherited tools; [related work](../references/RELATED_WORK.md) records their attribution.
@@ -102,14 +102,14 @@ Every separable state has Bell overlap at most $`1/d`$. For a product vector thi
 
 ```math
 E_R(\rho)
-\geq D_{\rm bin}(F\|1/d)
+\geq D_{\rm bin}(F\Vert1/d)
 \geq F\log_2d-h_2(F).
 ```
 
-For completeness, the first inequality has a threshold condition. The measured overlap of a separable comparison state is some $`G\leq1/d`$. For $`F\geq1/d`$, the binary relative entropy $`D_{\rm bin}(F\|G)`$ decreases with $`G`$ on that interval, so its minimum is at $`G=1/d`$. No such minimization claim is made when $`F\lt 1/d`$. The second inequality follows by expanding
+For completeness, the first inequality has a threshold condition. The measured overlap of a separable comparison state is some $`G\leq1/d`$. For $`F\geq1/d`$, the binary relative entropy $`D_{\rm bin}(F\Vert G)`$ decreases with $`G`$ on that interval, so its minimum is at $`G=1/d`$. No such minimization claim is made when $`F\lt 1/d`$. The second inequality follows by expanding
 
 ```math
-D_{\rm bin}(F\|1/d)
+D_{\rm bin}(F\Vert1/d)
 =F\log_2d-h_2(F)
  -(1-F)\log_2(1-1/d).
 ```

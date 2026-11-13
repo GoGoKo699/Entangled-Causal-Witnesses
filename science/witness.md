@@ -20,7 +20,7 @@ Set $`s=1-2q`$, $`r=\sqrt{p(1-p)}`$. The reduced input state and the Bell-effect
 ```math
 \rho_B=\frac{I+2rU}{d},
 \qquad
-\frac12\operatorname{Tr}_A\{E_d,\rho_{AB}\}
+\frac12\mathrm{Tr}_A\{E_d,\rho_{AB}\}
 =\frac{pI+rU}{d}.
 ```
 
@@ -51,7 +51,7 @@ W=\Pi_-\otimes|1\rangle\langle1|
 is positive semidefinite on the formal $`B_1\otimes C_2`$ tensor product. Every ordinary spatial density matrix has a nonnegative expectation under $`W`$. For the attaining temporal data,
 
 ```math
-w:=\operatorname{Tr}(WR_{BC})=-\frac{f_*}{2}<0
+w:=\mathrm{Tr}(WR_{BC})=-\frac{f_*}{2}<0
 \qquad(0\le q<1/2).
 ```
 
@@ -67,7 +67,7 @@ Collect independent runs in each of these settings, using the same initial prepa
 Every run is retained. A zero final bit contributes zero to the second estimator; it is not a postselection condition. The coarse Lüders measurement gives
 
 ```math
-m_U=\frac12\operatorname{Tr}\!\left[
+m_U=\frac12\mathrm{Tr}\!\left[
 \rho_{AB}\{I_A\otimes U,F_1\}\right],
 \qquad
 w=\frac12(p_1-m_U).

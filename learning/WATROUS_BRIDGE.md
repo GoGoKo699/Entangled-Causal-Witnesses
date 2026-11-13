@@ -12,7 +12,7 @@ The point of entry is a six-qubit experiment: prepare two correlated registers, 
 |---|---|---|
 | Singular values, Schmidt decomposition and operator norms | §1.1.3, starting p. 24; Schmidt decomposition Eq. (1.164), p. 31 | Rank of the input amplitude matrix and the norm estimates in [the converse](../science/schmidt_law.md#2-amplitude-matrices) |
 | Convexity | §1.2.1, starting p. 35 | A mixed preparation is a convex combination; a convex negativity bound for every allowed pure input also bounds every allowed mixture |
-| States and reduced states | §§2.1.2–2.1.3, pp. 61 and 67 | $`\rho_{AB}`$ is the preparation; $`\rho_B=\operatorname{Tr}_A\rho_{AB}`$ retains one register |
+| States and reduced states | §§2.1.2–2.1.3, pp. 61 and 67 | $`\rho_{AB}`$ is the preparation; $`\rho_B=\mathrm{Tr}_A\rho_{AB}`$ retains one register |
 | Channels and their matrix representations | §§2.2.1–2.2.2, pp. 72 and 77; Choi Eqs. (2.64)–(2.66), p. 78 | Verify that the noisy Bell test is a physical channel; keep the Choi convention distinct from the PDM convention |
 | Effects, measurements and state update | §§2.3.1–2.3.2, pp. 100 and 105; nondestructive measurements and instruments, pp. 111–112 | The effects $`F_0,F_1`$ specify final probabilities; the initial coarse measurement also has an explicit state update |
 | Entropy and relative entropy | §§5.1.1 and 5.2.1, pp. 250 and 265; §5.2.3, p. 276; Theorem 5.35, p. 280 | Count preparation entanglement and apply relative-entropy data processing in [the formation bound](../science/entanglement_cost.md) |
@@ -27,11 +27,11 @@ These are reference points, not a requirement to finish entire chapters before r
 |---|---|---|
 | A unit vector $`u`$ and pure-state matrix $`uu^*`$ | $`|\psi\rangle`$ and $`|\psi\rangle\langle\psi|`$ | The adjoint $`*`$ is written $`\dagger`$ in the scientific account |
 | $`\mathrm D(\mathcal X)`$ | States such as $`\rho_{AB}`$ | Positive operators of trace one |
-| Schatten norms $`\|X\|_1,\|X\|_2,\|X\|_\infty`$ | The same norm subscripts | Trace, Hilbert–Schmidt and operator norms; $`\|Y\|_2=1`$ is not an operator-norm condition |
-| Entanglement rank bounded by $`k`$ | $`\operatorname{SN}(\rho)\leq k`$ | A mixed-state decomposition with every pure component of Schmidt rank at most $`k`$; ordinary matrix rank of $`\rho`$ is different |
+| Schatten norms $`\Vert X\Vert_1,\Vert X\Vert_2,\Vert X\Vert_\infty`$ | The same norm subscripts | Trace, Hilbert–Schmidt and operator norms; $`\Vert Y\Vert_2=1`$ is not an operator-norm condition |
+| Entanglement rank bounded by $`k`$ | $`\mathrm{SN}(\rho)\leq k`$ | A mixed-state decomposition with every pure component of Schmidt rank at most $`k`$; ordinary matrix rank of $`\rho`$ is different |
 | Entropy $`H`$ | $`S`$ or $`h_2`$ | Base-two von Neumann entropy or the binary entropy; one ebit is the entropy of one Bell pair |
 | Ordinary density operators are positive | $`R_{BC}`$ can have negative eigenvalues | $`R`$ summarizes temporal correlators and is not an ordinary prepared state |
-| A probability computed from an effect | $`F=\operatorname{Tr}(E_d\rho)`$ | $`F`$ is called **Bell overlap** here; no alternative fidelity convention is implicit |
+| A probability computed from an effect | $`F=\mathrm{Tr}(E_d\rho)`$ | $`F`$ is called **Bell overlap** here; no alternative fidelity convention is implicit |
 
 The Choi conversion deserves its own line. Watrous places the positive Choi operator in **output then input** order. The source PDM formula uses **input then output**, with a transpose on the input factor. If $`S`$ swaps the factors, the corresponding PDM matrix is
 
@@ -44,13 +44,13 @@ These are unnormalized Choi conventions: no extra division by input dimension is
 ```math
 R_{BC}=\sum_{j=0}^1H_j\otimes|j\rangle\langle j|,
 \qquad
-H_j=\frac12\operatorname{Tr}_A(F_j\rho+\rho F_j).
+H_j=\frac12\mathrm{Tr}_A(F_j\rho+\rho F_j).
 ```
 
 ## The steps beyond the book
 
 1. **From a state update to temporal data.** For $`P_\pm=(I\pm U)/2`$, the signed difference of the two unnormalized updated states is $`(U\rho+\rho U)/2`$. Applying the final apparatus to that difference gives the sequential correlator. This is the missing connection between an ordinary instrument and the temporal PDM.
-2. **From positivity to a temporal witness.** For Hermitian trace-one $`R`$, $`f(R)=\|R\|_1-1=2\operatorname{Tr}R_-`$. The source PDM papers establish the relevant causal null theorem and positive-operator witness framework. These are research-level foundations, attributed in [related work](../references/RELATED_WORK.md), rather than theorems attributed to the textbook.
+2. **From positivity to a temporal witness.** For Hermitian trace-one $`R`$, $`f(R)=\Vert R\Vert_1-1=2\mathrm{Tr}R_-`$. The source PDM papers establish the relevant causal null theorem and positive-operator witness framework. These are research-level foundations, attributed in [related work](../references/RELATED_WORK.md), rather than theorems attributed to the textbook.
 3. **From Schmidt number to the sharp noise law.** The book's Bell-overlap bound is a starting ingredient. The quadratic dependence at fixed noise additionally needs the completed-square estimate for both $`H_j`$ blocks and the embedded attaining construction in [the main proof](../science/schmidt_law.md). Those arguments establish this project's law.
 4. **From dimension to paid entanglement.** A large Schmidt number alone permits very small entropy. [The separate formation theorem](../science/entanglement_cost.md) combines overlap, relative-entropy data processing and inherited entanglement inequalities to show that constant negativity requires logarithmic-order formation entanglement.
 5. **From a formal witness to two experiments.** [The estimator](../science/witness.md) compares an undisturbed baseline with a sequential measurement context. Its negative value is not a negative probability, and a negativity ratio does not by itself prove a universal sampling advantage.

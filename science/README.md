@@ -2,7 +2,7 @@
 
 How much initial spatial entanglement is needed to obtain a strong temporal causal witness from the same apparatus?
 
-We study an explicit joint measurement on two $`d`$-dimensional systems. It tests the maximally entangled Bell effect, retains one classical bit, and flips that bit with probability $`q`$. The initial $`B`$ event and later output bit define a reduced pseudo-density matrix (PDM). Its negativity $`f=\|R\|_1-1`$ certifies signalling in this experiment, even when the input is initially correlated.
+We study an explicit joint measurement on two $`d`$-dimensional systems. It tests the maximally entangled Bell effect, retains one classical bit, and flips that bit with probability $`q`$. The initial $`B`$ event and later output bit define a reduced pseudo-density matrix (PDM). Its negativity $`f=\Vert R\Vert_1-1`$ certifies signalling in this experiment, even when the input is initially correlated.
 
 The question is quantitative. Qualitative sufficiency of some product preparation does not mean product preparations provide the strongest negativity.
 

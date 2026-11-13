@@ -2,7 +2,7 @@
 
 [Science overview](README.md) · [Model](model.md) · [Entanglement cost](entanglement_cost.md) · [Temporal witness](witness.md)
 
-This page proves the main theorem for the fixed Bell-effect measurement channel of the [model](model.md). The optimized quantity $`\mathcal F_k(d,q)`$ uses all initial mixed states of Schmidt number at most $`k`$. The normalization is $`f(R)=\|R\|_1-1`$.
+This page proves the main theorem for the fixed Bell-effect measurement channel of the [model](model.md). The optimized quantity $`\mathcal F_k(d,q)`$ uses all initial mixed states of Schmidt number at most $`k`$. The normalization is $`f(R)=\Vert R\Vert_1-1`$.
 
 ## 1. Finite bounds and the uniform theorem
 
@@ -65,20 +65,20 @@ It first suffices to consider a pure input. Write it with a matrix whose rows ar
 
 ```math
 |\psi\rangle=\sum_{i,j=1}^dY_{ji}|i\rangle_A|j\rangle_B,
-\qquad \|Y\|_2=1,
-\qquad \operatorname{rank}Y\leq k.
+\qquad \Vert Y\Vert_2=1,
+\qquad \mathrm{rank}Y\leq k.
 ```
 
-Here $`\|Y\|_2`$ is the Hilbert–Schmidt norm, not the operator norm. Set $`\alpha=\operatorname{Tr}Y`$. Direct partial tracing gives
+Here $`\Vert Y\Vert_2`$ is the Hilbert–Schmidt norm, not the operator norm. Set $`\alpha=\mathrm{Tr}Y`$. Direct partial tracing gives
 
 ```math
 \rho_B=YY^\dagger,
 \qquad
-H_E:=\frac12\operatorname{Tr}_A(E_d\rho+\rho E_d)
+H_E:=\frac12\mathrm{Tr}_A(E_d\rho+\rho E_d)
 =\frac{\alpha Y^\dagger+\overline\alpha Y}{2d}.
 ```
 
-For example, $`\langle\Phi_d|\psi\rangle=\alpha/\sqrt d`$, and $`\operatorname{Tr}_A(E_d\rho)=\alpha Y^\dagger/d`$; averaging with its adjoint proves the second identity. Thus the two PDM blocks are
+For example, $`\langle\Phi_d|\psi\rangle=\alpha/\sqrt d`$, and $`\mathrm{Tr}_A(E_d\rho)=\alpha Y^\dagger/d`$; averaging with its adjoint proves the second identity. Thus the two PDM blocks are
 
 ```math
 H_1=qYY^\dagger+\frac{s}{2d}
@@ -93,9 +93,9 @@ H_0=(1-q)YY^\dagger-\frac{s}{2d}
 Two elementary norm bounds will be used:
 
 ```math
-|\alpha|\leq\|Y\|_1\leq\sqrt{k}\|Y\|_2=\sqrt{k},
+|\alpha|\leq\Vert Y\Vert_1\leq\sqrt{k}\Vert Y\Vert_2=\sqrt{k},
 \qquad
-\|H_E\|_1\leq\frac{|\alpha|\|Y\|_1}{d}\leq\frac{k}{d}.
+\Vert H_E\Vert_1\leq\frac{|\alpha|\Vert Y\Vert_1}{d}\leq\frac{k}{d}.
 ```
 
 The first inequality is the trace/operator-norm duality with the identity; the second uses Cauchy–Schwarz on at most $`k`$ nonzero singular values.
@@ -106,22 +106,22 @@ Apply the trace-norm triangle inequality to the two blocks:
 
 ```math
 \begin{aligned}
-\|H_1\|_1&\leq q\operatorname{Tr}(YY^\dagger)+s\|H_E\|_1,\\
-\|H_0\|_1&\leq(1-q)\operatorname{Tr}(YY^\dagger)+s\|H_E\|_1.
+\Vert H_1\Vert_1&\leq q\mathrm{Tr}(YY^\dagger)+s\Vert H_E\Vert_1,\\
+\Vert H_0\Vert_1&\leq(1-q)\mathrm{Tr}(YY^\dagger)+s\Vert H_E\Vert_1.
 \end{aligned}
 ```
 
-Since $`\operatorname{Tr}(YY^\dagger)=1`$, subtraction of the unit trace yields
+Since $`\mathrm{Tr}(YY^\dagger)=1`$, subtraction of the unit trace yields
 
 ```math
-f(R_{BC})\leq2s\|H_E\|_1\leq2s\frac{k}{d}.
+f(R_{BC})\leq2s\Vert H_E\Vert_1\leq2s\frac{k}{d}.
 ```
 
 This proof includes $`q=0`$.
 
 ## 4. The quadratic upper bound
 
-Assume $`q>0`$. Let $`P`$ be the orthogonal projection onto the row support $`\operatorname{ran}Y^\dagger`$, of rank at most $`k`$. Then $`YP=Y`$ and $`PY^\dagger=Y^\dagger`$. Define $`\beta=s\alpha/(2d)`$. Completing the square gives the exact identities
+Assume $`q>0`$. Let $`P`$ be the orthogonal projection onto the row support $`\mathrm{ran}Y^\dagger`$, of rank at most $`k`$. Then $`YP=Y`$ and $`PY^\dagger=Y^\dagger`$. Define $`\beta=s\alpha/(2d)`$. Completing the square gives the exact identities
 
 ```math
 H_1=q\left(Y+\frac\beta qP\right)
@@ -138,10 +138,10 @@ H_0=(1-q)\left(Y-\frac\beta{1-q}P\right)
 If a Hermitian matrix has the form $`K=S-cP`$ with $`S\succeq0`$, $`c\geq0`$, and $`P`$ a projection, then
 
 ```math
-\operatorname{Tr}K_-
-=-\operatorname{Tr}(\Pi_-K)
-\leq c\operatorname{Tr}(\Pi_-P)
-\leq c\operatorname{Tr}P,
+\mathrm{Tr}K_-
+=-\mathrm{Tr}(\Pi_-K)
+\leq c\mathrm{Tr}(\Pi_-P)
+\leq c\mathrm{Tr}P,
 ```
 
 where $`\Pi_-`$ is its negative spectral projection. Applying this fact to the two completed squares and recalling that $`f`$ is twice the sum of the negative weights gives
@@ -157,7 +157,7 @@ f(R_{BC})
 
 Every mixed state of Schmidt number at most $`k`$ is a convex combination of pure states satisfying the same bound. Convexity of $`f`$ therefore extends both upper bounds to the full mixed-state optimization.
 
-The completed square is essential to the stronger conclusion. The standard Bell-overlap inequality $`\operatorname{Tr}(E_d\rho)\leq k/d`$ combined with a generic overlap-based upper bound would give only a linear $`O_q(k/d)`$ estimate. The argument above gives the square $`O_q((k/d)^2)`$ at fixed positive noise.
+The completed square is essential to the stronger conclusion. The standard Bell-overlap inequality $`\mathrm{Tr}(E_d\rho)\leq k/d`$ combined with a generic overlap-based upper bound would give only a linear $`O_q(k/d)`$ estimate. The argument above gives the square $`O_q((k/d)^2)`$ at fixed positive noise.
 
 ## 5. An attaining family for every even Schmidt budget
 
