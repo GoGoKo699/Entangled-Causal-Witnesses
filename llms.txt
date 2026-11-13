@@ -1,0 +1,22 @@
+# Entangled Causal Witnesses
+
+The repository studies initial-entanglement requirements for reduced temporal pseudo-density-matrix witnesses of signalling in a fixed noisy Bell-effect channel.
+
+## Authoritative reading routes
+
+- README.md: scientific question, central uniform law, scope and navigation.
+- science/README.md: connected overview of the complete argument.
+- science/model.md: dimensions, channel, coarse sequential measurements, PDM normalization, Schmidt-number budget and no-false-positive boundary.
+- science/schmidt_law.md: authoritative finite upper/lower bounds and proof of the matching-order dimension/Schmidt-number/noise law; even/odd/product boundary cases.
+- science/entanglement_cost.md: Bell-overlap and relative-entropy derivation of a single-preparation entanglement-of-formation lower bound.
+- science/witness.md: attaining balanced-state family, two-setting estimator, distinction between baseline and measured contexts, constructive precision bound.
+- science/implementation.md: explicit qubit preparation, joint Bell test, final-bit noise model, gates/workspace and ideal-operation assumptions.
+- science/interpretation.md: physical meaning, inherited ingredients, normalization and sampling limits.
+- references/RELATED_WORK.md and references/references.bib: primary-source attribution and model/theorem comparisons.
+- verification/README.md: reproduction command, actual finite checks and evidence limits.
+
+## Claim discipline
+
+Use f(R)=||R||_1-1, twice ordinary trace negativity. For q<=q0<1/2, the optimized value under initial Schmidt number k is Theta_{q0}(k^2/[d(k+qd)]). The bound covers arbitrary mixed Schmidt-number-k inputs, not only a displayed pure family. The displayed family matches order; its exact value is not the all-input optimum.
+
+The reported noise acts on one final bit, not every internal detector or gate. Both A and B enter the known joint apparatus. Initial entanglement changes accessible causal influence and is charged. Entanglement of formation is not silently the regularized asymptotic cost. No universal sample-complexity or algorithmic-advantage claim is made. Negative temporal-witness expectation is reconstructed from distinct contexts and is not a negative physical joint probability.

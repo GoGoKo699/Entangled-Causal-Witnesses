@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "rng_seed": 20261113,
+  "script_sha256": "3f30a1cbc9b3605878313ec5195853ab0a4897453a7116b4f5ddbc18086886d0",
+  "absolute_tolerance": 2e-11,
+  "numpy_version": "2.3.5",
+  "python_version": "3.12.14",
+  "total_cases": 849,
+  "groups": [
+    {
+      "name": "complex_amplitude_vs_full_effect_partial_trace",
+      "cases": 192,
+      "dimensions": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "max_entry_error": 2.2204752128177293e-16,
+      "max_trace_error": 4.448398131127463e-16,
+      "max_hermiticity_error": 1.1102230246251565e-16,
+      "max_trace_norm_identity_error": 6.938893903907228e-16
+    },
+    {
+      "name": "independent_pauli_sequential_reconstruction",
+      "cases": 16,
+      "dimensions": [
+        2,
+        4
+      ],
+      "max_entry_error": 5.721958498152797e-17,
+      "minimum_born_probability": 0.0,
+      "measurement": "Coarse-grained +/-1 Pauli-string projectors on B, then classical output bit"
+    },
+    {
+      "name": "schmidt_number_and_mixture_bounds",
+      "cases": 255,
+      "dimensions": [
+        2,
+        3,
+        4,
+        8
+      ],
+      "each_k": true,
+      "mixture_size": 3,
+      "max_upper_bound_violation": 0.0,
+      "max_convexity_violation": 0.0,
+      "scope": "Known decompositions of Schmidt rank <=k; not an algorithm for deciding Schmidt number"
+    },
+    {
+      "name": "attainers_odd_embeddings_and_noise_crossover",
+      "cases": 198,
+      "dimensions": [
+        2,
+        3,
+        4,
+        8,
+        16
+      ],
+      "each_k": true,
+      "q_values": [
+        0.0,
+        1e-06,
+        0.001,
+        0.05,
+        0.2,
+        0.4
+      ],
+      "max_even_embedding_formula_error": 8.326672684688674e-17,
+      "max_lower_bound_violation": 8.326672684688674e-17,
+      "uniform_qmax": 0.4,
+      "uniform_lower_constant": 0.0010355339059327372,
+      "observed_construction_over_t_squared_div_q_plus_t": [
+        0.0031642569182342814,
+        0.2882456112707371
+      ],
+      "crossover_examples": [
+        {
+          "d": 4,
+          "k": 1,
+          "q": 0.0,
+          "analytic_construction_lower": 0.051776695296636886
+        },
+        {
+          "d": 4,
+          "k": 1,
+          "q": 0.001,
+          "analytic_construction_lower": 0.051381660072387966
+        },
+        {
+          "d": 4,
+          "k": 1,
+          "q": 0.2,
+          "analytic_construction_lower": 0.010043856274784494
+        },
+        {
+          "d": 16,
+          "k": 1,
+          "q": 0.0,
+          "analytic_construction_lower": 0.012944173824159222
+        },
+        {
+          "d": 16,
+          "k": 1,
+          "q": 0.001,
+          "analytic_construction_lower": 0.012630970662216934
+        },
+        {
+          "d": 16,
+          "k": 1,
+          "q": 0.2,
+          "analytic_construction_lower": 0.0008021008781286975
+        },
+        {
+          "d": 64,
+          "k": 1,
+          "q": 0.0,
+          "analytic_construction_lower": 0.0032360434560398054
+        },
+        {
+          "d": 64,
+          "k": 1,
+          "q": 0.001,
+          "analytic_construction_lower": 0.002957965259707913
+        },
+        {
+          "d": 64,
+          "k": 1,
+          "q": 0.2,
+          "analytic_construction_lower": 5.366662874615943e-05
+        },
+        {
+          "d": 256,
+          "k": 1,
+          "q": 0.0,
+          "analytic_construction_lower": 0.0008090108640099513
+        },
+        {
+          "d": 256,
+          "k": 1,
+          "q": 0.001,
+          "analytic_construction_lower": 0.0005859396581485125
+        },
+        {
+          "d": 256,
+          "k": 1,
+          "q": 0.2,
+          "analytic_construction_lower": 3.4131992001770128e-06
+        }
+      ],
+      "warning": "Scaling-matching constructions are not claimed to be exact global maximizers"
+    },
+    {
+      "name": "fidelity_and_formation_entropy_bounds",
+      "cases": 157,
+      "dimensions_for_matrix_checks": [
+        2,
+        3,
+        4,
+        8
+      ],
+      "max_fidelity_bound_violation": 0.0,
+      "max_linear_fidelity_violation": 0.0,
+      "max_pure_entropy_lower_bound_violation": 1.2813706015259676e-15,
+      "large_dimension_diagonal_examples": [
+        {
+          "d": 16,
+          "q": 0.4,
+          "construction_negativity": 0.009901951359278476,
+          "pure_state_entanglement_bits": 3.0788621809695615,
+          "formation_entanglement_lower_bits": 0.0
+        },
+        {
+          "d": 256,
+          "q": 0.4,
+          "construction_negativity": 0.009901951359278476,
+          "pure_state_entanglement_bits": 7.07886218096956,
+          "formation_entanglement_lower_bits": 0.0
+        },
+        {
+          "d": 4096,
+          "q": 0.4,
+          "construction_negativity": 0.009901951359278476,
+          "pure_state_entanglement_bits": 11.078862180969564,
+          "formation_entanglement_lower_bits": 0.42588099573610116
+        },
+        {
+          "d": 65536,
+          "q": 0.4,
+          "construction_negativity": 0.009901951359278476,
+          "pure_state_entanglement_bits": 15.078862180969557,
+          "formation_entanglement_lower_bits": 0.9011746609814681
+        }
+      ],
+      "scope": "Pure-state entanglement computed from reduced spectra. These checks do not compute the mixed-state entanglement-of-formation convex roof."
+    },
+    {
+      "name": "two_setting_unconditioned_witness_identity",
+      "cases": 12,
+      "dimensions": [
+        2,
+        4,
+        8
+      ],
+      "q_values": [
+        0.0,
+        0.05,
+        0.2,
+        0.4
+      ],
+      "max_two_setting_identity_error": 5.551115123125783e-17,
+      "max_negative_mass_identity_error": 0.0,
+      "minimum_joint_born_probability": 0.0048548310772699565,
+      "settings": [
+        "Output bit without an earlier measurement",
+        "Coarse-grained U measurement on B followed by output bit"
+      ],
+      "conditioning": "None: every trial in each setting contributes"
+    },
+    {
+      "name": "nonsignalling_control_with_initial_entanglement",
+      "cases": 18,
+      "dimensions": [
+        2,
+        4,
+        8
+      ],
+      "maximum_negativity": 0.0,
+      "effect": "F1=G_A tensor I_B; no B-to-output signalling"
+    },
+    {
+      "name": "construction_is_not_global_optimizer_guard",
+      "cases": 1,
+      "d": 4,
+      "q": 0.0,
+      "alternative_negativity": 0.25,
+      "balanced_construction_negativity": 0.20710678118654754,
+      "claim": "The analytic family matches scaling; exact global optimization is not established"
+    }
+  ],
+  "failures": [],
+  "limits": [
+    "Deterministic finite floating-point checks, not formal proofs or exhaustive validation.",
+    "Schmidt-number bounds are tested on states with known decompositions; Schmidt number is not numerically certified for arbitrary states.",
+    "The construction is scaling-matching, not an exact global optimizer.",
+    "No experimental sample-complexity separation follows from these numerical checks."
+  ]
+}
