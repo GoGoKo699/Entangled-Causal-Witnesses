@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "README.md",
+      "index": 14,
+      "source_sha256": "aeb06b3e2eeee07ea12b0328186443047f746b39bcebe1a5e0580e8e9332ccf1",
+      "expected_text": "\n  \n    F\n    k\n  \n  (\n  d\n  ,\n  q\n  )\n  =\n  \n    Θ\n    \n      \n        q\n        0\n      \n    \n  \n  \n    \n  \n  \n    (\n    \n      \n        k\n        2\n      \n      \n        d\n        (\n        k\n        +\n        q\n        d\n        )\n      \n    \n    )\n  \n  .\n"
+    },
+    {
+      "path": "science/schmidt_law.md",
+      "index": 18,
+      "source_sha256": "aaf90e86f82b6c416b18187844d9573991e2a22346546f3ad100c68ec896c34d",
+      "expected_text": "\n  \n    \n      s\n      0\n      2\n    \n    \n      16\n      (\n      1\n      +\n      \n        2\n      \n      )\n    \n  \n  \n    \n      k\n      2\n    \n    \n      d\n      (\n      k\n      +\n      q\n      d\n      )\n    \n  \n  ≤\n  \n    \n      F\n    \n    k\n  \n  (\n  d\n  ,\n  q\n  )\n  ≤\n  4\n  \n    \n      k\n      2\n    \n    \n      d\n      (\n      k\n      +\n      q\n      d\n      )\n    \n  \n  .\n"
+    },
+    {
+      "path": "science/schmidt_law.md",
+      "index": 19,
+      "source_sha256": "9e2dfdb108c11dfd72b380229a0dc28b9ece2efbaf7ed2a531a591d91162aadf",
+      "expected_text": "\n  \n    \n      \n        \n          \n            \n              \n                F\n              \n              k\n            \n            (\n            d\n            ,\n            q\n            )\n            =\n            \n              Θ\n              \n                \n                  q\n                  0\n                \n              \n            \n            \n              \n            \n            \n              (\n              \n                \n                  k\n                  2\n                \n                \n                  d\n                  (\n                  k\n                  +\n                  q\n                  d\n                  )\n                \n              \n              )\n            \n            .\n          \n        \n      \n    \n  \n"
+    },
+    {
+      "path": "science/entanglement_cost.md",
+      "index": 60,
+      "source_sha256": "4308e829a3d28dcaf2114898c6aa77e8c26a24426d28da6c79606b62e9b4ac78",
+      "expected_text": "\n  \n    \n      \n        \n          \n            \n              E\n              F\n            \n            (\n            ρ\n            )\n            ≥\n            max\n            {\n            0\n            ,\n             \n            f\n            (\n            \n              R\n              \n                B\n                C\n              \n            \n            \n              )\n              2\n            \n            \n              log\n              2\n            \n            ⁡\n            d\n            −\n            1\n            }\n            .\n          \n        \n      \n    \n  \n"
+    },
+    {
+      "path": "science/witness.md",
+      "index": 26,
+      "source_sha256": "ffd3b26356b6fe9adae1b8a58ac1af4da54354d6217196eec856f38e31ab0592",
+      "expected_text": "\n  \n    m\n    U\n  \n  =\n  \n    1\n    2\n  \n  Tr\n  \n    \n  \n  \n    [\n    \n      ρ\n      \n        A\n        B\n      \n    \n    {\n    \n      I\n      A\n    \n    ⊗\n    U\n    ,\n    \n      F\n      1\n    \n    }\n    ]\n  \n  ,\n  \n    \n  \n  w\n  =\n  \n    1\n    2\n  \n  (\n  \n    p\n    1\n  \n  −\n  \n    m\n    U\n  \n  )\n  .\n"
+    },
+    {
+      "path": "learning/WORKED_EXAMPLE.md",
+      "index": 16,
+      "source_sha256": "6bf0cd3d4c991088fde83852e446a583428be3fabd882b32cab62b52347ecbc2",
+      "expected_text": "\n  |\n  ψ\n  ⟩\n  =\n  \n    \n      (\n      \n        \n          p\n          ∗\n        \n      \n      |\n      \n        Φ\n        +\n      \n      ⟩\n      +\n      \n        1\n        −\n        \n          p\n          ∗\n        \n      \n      |\n      \n        Φ\n        −\n      \n      ⟩\n      )\n    \n    \n      \n        A\n        1\n      \n      \n        B\n        1\n      \n    \n  \n  ⊗\n  |\n  \n    Φ\n    +\n  \n  \n    ⟩\n    \n      \n        A\n        2\n      \n      \n        B\n        2\n      \n    \n  \n  ⊗\n  |\n  \n    Φ\n    +\n  \n  \n    ⟩\n    \n      \n        A\n        3\n      \n      \n        B\n        3\n      \n    \n  \n  .\n"
+    },
+    {
+      "path": "learning/WORKED_EXAMPLE.md",
+      "index": 47,
+      "source_sha256": "70345cfab9eb2e558d7293e159e4db30acdc84f5e9c4767550c6c26373de2b6f",
+      "expected_text": "\n  w\n  =\n  Tr\n  (\n  W\n  \n    R\n    \n      B\n      C\n    \n  \n  )\n  =\n  \n    1\n    2\n  \n  (\n  \n    p\n    1\n  \n  −\n  \n    m\n    U\n  \n  )\n  =\n  \n    \n      5\n      −\n      \n        41\n      \n    \n    20\n  \n  ≈\n  −\n  0.0701562119\n  .\n"
+    },
+    {
+      "path": "learning/WORKED_EXAMPLE.md",
+      "index": 55,
+      "source_sha256": "4aac12fa71a903c27cb3fb0fe2495fb48d51be48e53501b097df1db7fdeae724",
+      "expected_text": "\n  \n    \n      F\n    \n    1\n  \n  (\n  8\n  ,\n  1\n  \n    /\n  \n  10\n  )\n  ≤\n  \n    \n      (\n      4\n      \n        /\n      \n      5\n      \n        )\n        2\n      \n    \n    \n      2\n      (\n      1\n      \n        /\n      \n      10\n      )\n      (\n      9\n      \n        /\n      \n      10\n      )\n      \n        8\n        2\n      \n    \n  \n  =\n  \n    1\n    18\n  \n  <\n  \n    \n      \n        41\n      \n      −\n      5\n    \n    10\n  \n  .\n"
+    }
+  ]
+}

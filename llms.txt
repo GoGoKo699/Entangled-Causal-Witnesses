@@ -14,6 +14,10 @@ The repository studies initial-entanglement requirements for reduced temporal ps
 - science/interpretation.md: physical meaning, inherited ingredients, normalization and sampling limits.
 - references/RELATED_WORK.md and references/references.bib: primary-source attribution and model/theorem comparisons.
 - verification/README.md: reproduction command, actual finite checks and evidence limits.
+- learning/README.md: entrypoint to the one-anchor learning route.
+- learning/WATROUS_BRIDGE.md: verified Watrous2018 foundation pointers, notation dictionary and missing research steps.
+- learning/WORKED_EXAMPLE.md: a complete six-qubit, one-noisy-bit experiment with positive physical probabilities and a two-context temporal witness.
+- learning/MILESTONES.md: exactly30 common understanding targets M01–M30 in background and narrative phases, with dependencies and source pointers.
 
 ## Claim discipline
 

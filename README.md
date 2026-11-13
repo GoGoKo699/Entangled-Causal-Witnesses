@@ -38,6 +38,10 @@ Start with the [connected overview](science/README.md), or follow the question t
 
 The [LLM reading guide](llms.txt) maps detailed questions to their authoritative files.
 
+## Learn the argument
+
+The educational anchor is **John Watrous, [The Theory of Quantum Information (2018)](https://cs.uwaterloo.ca/~watrous/TQI/)**, using the author's standard-layout manuscript. Start with the [complete six-qubit example](learning/WORKED_EXAMPLE.md), then use the [source bridge](learning/WATROUS_BRIDGE.md) and [30-milestone map](learning/MILESTONES.md) to connect the foundations to the resource law. The [learning guide](learning/README.md) explains the route; the direct scientific reading path remains available above.
+
 ## Scope
 
 The law concerns a specified family of known global Bell-effect channels and the strength of a particular temporal-correlation measure. Both input registers enter that apparatus. The entangled register is not an untouched external reference.
@@ -48,4 +52,4 @@ The two-setting construction gives a direct witness estimator. The negativity la
 
 ## Purpose and contact
 
-This repository records the scientific argument and supports the author's self-directed learning. For discussion or potential collaboration, contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
