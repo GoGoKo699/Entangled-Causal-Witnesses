@@ -25,7 +25,7 @@ These are reference points, not a requirement to finish entire chapters before r
 
 | Book notation or convention | Notation here | Translation to keep in mind |
 |---|---|---|
-| A unit vector $`u`$ and pure-state matrix $`uu^*`$ | $`|\psi\rangle`$ and $`|\psi\rangle\langle\psi|`$ | The adjoint $`*`$ is written $`\dagger`$ in the scientific account |
+| A unit vector $`u`$ and pure-state matrix $`uu^*`$ | $`\lvert\psi\rangle`$ and $`\lvert\psi\rangle\langle\psi\rvert`$ | The adjoint $`*`$ is written $`\dagger`$ in the scientific account |
 | $`\mathrm D(\mathcal X)`$ | States such as $`\rho_{AB}`$ | Positive operators of trace one |
 | Schatten norms $`\Vert X\Vert_1,\Vert X\Vert_2,\Vert X\Vert_\infty`$ | The same norm subscripts | Trace, Hilbert–Schmidt and operator norms; $`\Vert Y\Vert_2=1`$ is not an operator-norm condition |
 | Entanglement rank bounded by $`k`$ | $`\mathrm{SN}(\rho)\leq k`$ | A mixed-state decomposition with every pure component of Schmidt rank at most $`k`$; ordinary matrix rank of $`\rho`$ is different |
