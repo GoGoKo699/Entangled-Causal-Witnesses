@@ -42,7 +42,7 @@ The full-rank construction uses `U² = I` and the positive witness defined below
 ```math
 W=(I-U)/2\otimes|1\rangle\langle1|,
 \qquad
-\operatorname{Tr}(W R)=\frac12\left[p_1^{\mathrm{no\ measurement}}-\mathbb{E}_{\mathrm{measured}}(u\,\mathbf{1}_{C=1})\right].
+\mathrm{Tr}(W R)=\frac12\left[p_1^{\mathrm{no\ measurement}}-\mathbb{E}_{\mathrm{measured}}(u\,\mathbf{1}_{C=1})\right].
 ```
 
 One context reads the output bit with no earlier measurement. The other measures the coarse-grained `U` observable on `B` and then reads the output bit. Each context contributes all its trials. The negative quantity is a difference of context-dependent statistics; no physical joint probability becomes negative.

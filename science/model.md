@@ -17,8 +17,8 @@ The apparatus measures the two effects $`E_d`$ and $`I-E_d`$. It reports their b
 
 ```math
 \Gamma_{d,q}(X)
-=\operatorname{Tr}(F_0X)|0\rangle\langle0|
- +\operatorname{Tr}(F_1X)|1\rangle\langle1|,
+=\mathrm{Tr}(F_0X)|0\rangle\langle0|
+ +\mathrm{Tr}(F_1X)|1\rangle\langle1|,
 ```
 
 ```math
@@ -36,7 +36,7 @@ At the initial event, choose any Hermitian involution $`X`$ on $`B`$, so $`X^2=I
 
 ```math
 \langle X,Y\rangle_{\rm seq}
-=\operatorname{Tr}\!\left[
+=\mathrm{Tr}\!\left[
 Y\,\Gamma_{d,q}\!\left(
 \frac{(I_A\otimes X)\rho+\rho(I_A\otimes X)}2
 \right)\right].
@@ -45,7 +45,7 @@ Y\,\Gamma_{d,q}\!\left(
 Indeed, the difference of the two unnormalized postmeasurement states is the anticommutator in this expression. Setting $`X=I`$ means making no initial measurement. The reduced PDM $`R_{BC}(\rho)`$ is the unique operator satisfying
 
 ```math
-\operatorname{Tr}[R_{BC}(\rho)(X\otimes Y)]
+\mathrm{Tr}[R_{BC}(\rho)(X\otimes Y)]
 =\langle X,Y\rangle_{\rm seq}.
 ```
 
@@ -59,23 +59,23 @@ R_{BC}(\rho)=H_0(\rho)\otimes|0\rangle\langle0|
 ```
 
 ```math
-H_j(\rho)=\frac12\operatorname{Tr}_A(F_j\rho+\rho F_j).
+H_j(\rho)=\frac12\mathrm{Tr}_A(F_j\rho+\rho F_j).
 ```
 
-To verify it, cyclically move $`I_A\otimes X`$ in the sequential-correlator trace and then take the partial trace over $`A`$. The coefficient of $`Y_{jj}`$ becomes exactly $`\operatorname{Tr}(XH_j)`$. Off-diagonal output observables have zero expectation for this channel.
+To verify it, cyclically move $`I_A\otimes X`$ in the sequential-correlator trace and then take the partial trace over $`A`$. The coefficient of $`Y_{jj}`$ becomes exactly $`\mathrm{Tr}(XH_j)`$. Off-diagonal output observables have zero expectation for this channel.
 
 The PDM is Hermitian with trace one. Its marginals are
 
 ```math
 H_0+H_1=\rho_B,
 \qquad
-\operatorname{Tr}_B R_{BC}=\Gamma_{d,q}(\rho).
+\mathrm{Tr}_B R_{BC}=\Gamma_{d,q}(\rho).
 ```
 
 It need not be positive. The convention used throughout this repository is
 
 ```math
-f(R)=\|R\|_1-1=2\operatorname{Tr}R_-,
+f(R)=\Vert R\Vert_1-1=2\mathrm{Tr}R_-,
 \qquad
 R_-=\frac{|R|-R}{2}.
 ```
@@ -83,8 +83,8 @@ R_-=\frac{|R|-R}{2}.
 Thus $`f`$ is twice the ordinary negative spectral weight. It is not the logarithmic negativity. Because the output blocks are orthogonal,
 
 ```math
-f(R_{BC})=\|H_0\|_1+\|H_1\|_1-1
-         =2\operatorname{Tr}(H_0)_-+2\operatorname{Tr}(H_1)_-.
+f(R_{BC})=\Vert H_0\Vert_1+\Vert H_1\Vert_1-1
+         =2\mathrm{Tr}(H_0)_-+2\mathrm{Tr}(H_1)_-.
 ```
 
 Linearity of $`\rho\mapsto R_{BC}(\rho)`$ and convexity of the trace norm make $`f(R_{BC}(\rho))`$ convex in the initial state.
@@ -97,8 +97,8 @@ For a general quantum-to-classical channel, absence of signalling from $`B`$ mea
 
 ```math
 H_j
-=\operatorname{Tr}_A[(G_j\otimes I_B)\rho]
-=\operatorname{Tr}_A[(\sqrt{G_j}\otimes I_B)\rho
+=\mathrm{Tr}_A[(G_j\otimes I_B)\rho]
+=\mathrm{Tr}_A[(\sqrt{G_j}\otimes I_B)\rho
                      (\sqrt{G_j}\otimes I_B)]\succeq0.
 ```
 
@@ -114,7 +114,7 @@ A pure state has Schmidt rank at most $`k`$ when its coefficient matrix has rank
 
 ```math
 \mathcal F_k(d,q)
-=\max_{\rho_{AB}:\,\operatorname{SN}(\rho_{AB})\leq k}
+=\max_{\rho_{AB}:\,\mathrm{SN}(\rho_{AB})\leq k}
    f(R_{BC}(\rho_{AB})),
 \qquad 1\leq k\leq d.
 ```
